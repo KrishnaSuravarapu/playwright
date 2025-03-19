@@ -15406,6 +15406,11 @@ export interface BrowserType<Unused = {}> {
      *
      */
     wsPath?: string;
+
+    /**
+     * If specified, uses default context
+     */
+    useDefaultContext?: boolean;
   }): Promise<BrowserServer>;
 
   /**

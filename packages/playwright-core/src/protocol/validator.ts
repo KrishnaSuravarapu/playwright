@@ -553,6 +553,7 @@ scheme.BrowserTypeLaunchParams = tObject({
   chromiumSandbox: tOptional(tBoolean),
   firefoxUserPrefs: tOptional(tAny),
   slowMo: tOptional(tNumber),
+  useDefaultContext: tOptional(tBoolean),
 });
 scheme.BrowserTypeLaunchResult = tObject({
   browser: tChannel(['Browser']),

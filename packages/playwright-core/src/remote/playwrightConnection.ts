@@ -308,6 +308,7 @@ function filterLaunchOptions(options: LaunchOptions, allowFSPaths: boolean): Lau
     slowMo: options.slowMo,
     executablePath: (isUnderTest() || allowFSPaths) ? options.executablePath : undefined,
     downloadsPath: allowFSPaths ? options.downloadsPath : undefined,
+    useDefaultContext: options.useDefaultContext,
   };
 }
 
