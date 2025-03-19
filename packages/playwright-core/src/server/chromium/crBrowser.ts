@@ -74,7 +74,7 @@ export class CRBrowser extends Browser {
     // We don't trust the option as it may lie in case of connectOverCDP where remote browser
     // may have been launched with different options.
     browser.options.headful = !version.userAgent.includes('Headless');
-    if (!options.persistent || !options.originalLaunchOptions.useDefaultContext) {
+    if (!(options.persistent || options.originalLaunchOptions.useDefaultContext)) {
       await session.send('Target.setAutoAttach', { autoAttach: true, waitForDebuggerOnStart: true, flatten: true });
       return browser;
     }
