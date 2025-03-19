@@ -988,7 +988,6 @@ export type BrowserTypeLaunchOptions = {
   chromiumSandbox?: boolean,
   firefoxUserPrefs?: any,
   slowMo?: number,
-  useDefaultContext?: boolean,
 };
 export type BrowserTypeLaunchResult = {
   browser: BrowserChannel,
