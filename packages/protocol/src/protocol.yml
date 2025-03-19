@@ -476,6 +476,7 @@ LaunchOptions:
     tracesDir: string?
     chromiumSandbox: boolean?
     firefoxUserPrefs: json?
+    useDefaultContext: boolean?
 
 
 ContextOptions:

@@ -128,6 +128,7 @@ export type LaunchServerOptions = {
   port?: number,
   wsPath?: string,
   logger?: Logger,
+  useDefaultContext?: boolean,
   firefoxUserPrefs?: { [key: string]: string | number | boolean };
 };
 
