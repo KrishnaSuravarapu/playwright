@@ -15406,11 +15406,6 @@ export interface BrowserType<Unused = {}> {
      *
      */
     wsPath?: string;
-
-    /**
-     * If specified, uses default context
-     */
-    useDefaultContext?: boolean;
   }): Promise<BrowserServer>;
 
   /**
@@ -21778,11 +21773,6 @@ export interface LaunchOptions {
    * If specified, traces are saved into this directory.
    */
   tracesDir?: string;
-
-  /**
-   * If specified, uses default context
-   */
-  useDefaultContext?: boolean;
 }
 
 export interface ConnectOverCDPOptions {
